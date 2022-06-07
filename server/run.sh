@@ -1,0 +1,1 @@
+docker build . -t server;docker run -d --network="host" server
