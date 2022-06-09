@@ -1,7 +1,7 @@
 import requests
 import json
 
-url = "http://localhost:8081/"
+url = "http://localhost:8081/users"
 
 payload = json.dumps({
   "ime": "aca",
