@@ -1,0 +1,15 @@
+apiVersion: batch/v1
+kind: Job
+metadata:
+  name: server-job
+spec: 
+  template:         
+    metadata:
+      name: server-job
+    spec:
+      containers:
+      - name: server
+        image: python:latest
+        command:
+        - python
+        - app.py
